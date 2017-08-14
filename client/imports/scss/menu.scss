@@ -1,6 +1,6 @@
 
-@import "variables.scss";
-@import "elements.scss";
+@import "variables";
+@import "elements";
 
 
 /*
@@ -289,7 +289,7 @@ $navbar-height: 60px;
   position: relative;
   overflow-x: hidden;
   overflow-y: auto;
-  
+
   -ms-overflow-style: -ms-autohiding-scrollbar;
 
   &:-webkit-scrollbar{
@@ -322,7 +322,7 @@ $navbar-height: 60px;
   padding: 0;
   position: relative;
   text-decoration: none;
-  
+
 }
 
 #sidebar-menu {
@@ -339,7 +339,7 @@ $navbar-height: 60px;
     li { //Menu Item
 
 
-     
+
       .menu-arrow {
         -webkit-transition: -webkit-transform .15s;
         -o-transition: -o-transform .15s;
@@ -856,5 +856,3 @@ input.app-search-input {
     color: fade($white, 70%);
   }
 }
-
-

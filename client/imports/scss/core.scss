@@ -4,8 +4,8 @@
 @import url(https://fonts.googleapis.com/css?family=Rancho);
 
 
-@import "variables.scss";
-@import "elements.scss";
+@import "variables";
+@import "elements";
 
 
 /*
@@ -1358,5 +1358,3 @@ $-webkit-keyframes sk-rotateplane {
   }
 
 }
-
-
