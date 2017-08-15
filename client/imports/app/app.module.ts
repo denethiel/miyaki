@@ -4,17 +4,28 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
+import {AppRoutingModule} from './app.routing';
+
 import { AppComponent } from './app.component';
+import { LAYOUT_DECLARATIONS } from './../layouts';
+import { AUTH_DECLARATIONS } from './../auth';
+import {NAV_DROPDOWN_DIRECTIVES} from './../shared/nav-dropdown.directive';
+import {NAV_MENU_DIRECTIVES} from './../shared/nav-menu.directive';
+
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-
+    AppRoutingModule
   ],
   declarations: [
-    AppComponent
+    AppComponent,
+    NAV_DROPDOWN_DIRECTIVES,
+    NAV_MENU_DIRECTIVES,
+    ...LAYOUT_DECLARATIONS,
+    ...AUTH_DECLARATIONS
   ],
   providers:[{
     provide: LocationStrategy,

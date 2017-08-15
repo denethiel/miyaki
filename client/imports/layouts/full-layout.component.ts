@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router, NavigationEnd} from '@angular/router';
 import 'rxjs/add/operator/filter';
-import template './full-layout.component.html';
+import template from './full-layout.component.html';
 
 @Component({
   selector:'app-dashboard',

@@ -1,0 +1,74 @@
+<div class="account-pages"></div>
+        <div class="clearfix"></div>
+        <div class="wrapper-page">
+            <div class="text-center">
+                <a href="index.html" class="logo"><span>Facrsa<span>Project</span></span></a>
+                <h5 class="text-muted m-t-0 font-600">Facturas SAT</h5>
+            </div>
+        	<div class="m-t-40 card-box">
+                <div class="text-center">
+                    <h4 class="text-uppercase font-bold m-b-0">Registro</h4>
+                </div>
+                <div class="panel-body">
+                    <form [formGroup]="registerForm" (ngSubmit)="onSubmit(registerForm.value)" class="form-horizontal m-t-20" action="">
+
+						<div class="form-group" [class.form-error]="!email.valid && email.touched">
+							<div class="col-xs-12">
+								<input class="form-control" type="email" required="" formControlName="email" placeholder="Correo Electronico">
+								<ul class="form-error-list">
+									<error-messages [control]="email"></error-messages>
+								</ul>
+							</div>
+						</div>
+
+						<div class="form-group" [class.form-error]="!password.valid && password.touched">
+							<div class="col-xs-12">
+								<input class="form-control" type="password" formControlName="password" placeholder="Contraseña">
+								<ul class="form-error-list">
+									<error-messages [control]="password"></error-messages>
+								</ul>
+							</div>
+						</div>
+
+						<div class="form-group" [class.form-error]="!confirmPassword.valid && confirmPassword.touched">
+							<div class="col-xs-12">
+								<input class="form-control" type="password" required="" formControlName="confirmPassword" placeholder="Verificar Contraseña">
+								<ul class="form-error-list">
+									<error-messages [control]="confirmPassword"></error-messages>
+								</ul>
+							</div>
+						</div>
+
+						<div class="form-group" [class.form-error]="!conditions.valid && conditions.touched">
+							<div class="col-xs-12">
+								<div class="checkbox checkbox-custom">
+									<input id="checkbox-signup" type="checkbox" formControlName="conditions">
+									<label for="checkbox-signup">Acepto  los<a href="#">Terminos y Condiciones</a></label>
+									<ul class="form-error-list">
+										<error-messages [control]="conditions"></error-messages>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group text-center m-t-40">
+							<div class="col-xs-12">
+								<button class="btn btn-custom btn-bordred btn-block waves-effect waves-light" type="submit" [disabled]="registerForm.invalid">
+									Registrarse
+								</button>
+							</div>
+						</div>
+
+					</form>
+
+                </div>
+            </div>
+            <!-- end card-box -->
+
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<p class="text-muted">¿Posee una cuenta?<a class="text-primary m-l-5" [routerLink]="['/pages/login']"><b>Iniciar Sesion</b></a></p>
+				</div>
+			</div>
+
+        </div>
