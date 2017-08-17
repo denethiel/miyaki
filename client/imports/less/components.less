@@ -1,11 +1,11 @@
-@import "variables";
-@import "elements";
+@import "variables.less";
+@import "elements.less";
 
 
 /*
 Template Name: Adminto Dashboard
 Author: CoderThemes
-Email: coderthemes$gmail.com
+Email: coderthemes@gmail.com
 File: Components
 */
 
@@ -48,103 +48,103 @@ File: Components
   box-shadow: 0 0 0 100px rgba(0,0,0,.1) inset;
 }
 .btn-custom,.btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger, .btn-inverse, .btn-purple, .btn-pink {
-  color: $white !important;
+  color: @white !important;
 }
 
 .btn-custom {
-  background-color: $custom;
-  border-color: $custom;
+  background-color: @custom;
+  border-color: @custom;
 }
 .btn-custom:hover, .btn-custom:focus, .btn-custom:active, .btn-custom.active,
 .btn-custom.focus, .btn-custom:active, .btn-custom:focus, .btn-custom:hover,
 .open > .dropdown-toggle.btn-custom  {
-  background-color: darken($custom, 5%) !important;
-  border: 1px solid darken($custom, 5%) !important;
+  background-color: darken(@custom, 5%) !important;
+  border: 1px solid darken(@custom, 5%) !important;
 }
 
 .btn-default {
-  background-color: fade($default, 30%);
-  border-color: fade($default, 50%);
+  background-color: fade(@default, 30%);
+  border-color: fade(@default, 50%);
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active,
 .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover,
 .open > .dropdown-toggle.btn-default  {
-  background-color: fade($default, 50%) !important;
-  border: 1px solid fade($default, 70%) !important;
+  background-color: fade(@default, 50%) !important;
+  border: 1px solid fade(@default, 70%) !important;
 }
 
 .btn-primary{
-  background-color: $primary !important;
-  border: 1px solid $primary !important;
+  background-color: @primary !important;
+  border: 1px solid @primary !important;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active,
 .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover,
 .open > .dropdown-toggle.btn-primary  {
-  background-color: darken($primary, 5%) !important;
-  border: 1px solid darken($primary, 5%) !important;
+  background-color: darken(@primary, 5%) !important;
+  border: 1px solid darken(@primary, 5%) !important;
 }
 
 .btn-success {
-  background-color: $success !important;
-  border: 1px solid $success !important;
+  background-color: @success !important;
+  border: 1px solid @success !important;
 }
 .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .btn-success.focus, .btn-success:active, .btn-success:focus, .btn-success:hover, .open > .dropdown-toggle.btn-success {
-  background-color: darken($success, 5%) !important;
-  border: 1px solid darken($success, 5%) !important;
+  background-color: darken(@success, 5%) !important;
+  border: 1px solid darken(@success, 5%) !important;
 }
 
 .btn-info {
-  background-color: $info !important;
-  border: 1px solid $info !important;
+  background-color: @info !important;
+  border: 1px solid @info !important;
 }
 .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .btn-info.focus, .btn-info:active, .btn-info:focus, .btn-info:hover, .open > .dropdown-toggle.btn-info {
-  background-color: darken($info, 5%) !important;
-  border: 1px solid darken($info, 5%) !important;
+  background-color: darken(@info, 5%) !important;
+  border: 1px solid darken(@info, 5%) !important;
 }
 
 .btn-warning {
-  background-color: $warning !important;
-  border: 1px solid $warning !important;
+  background-color: @warning !important;
+  border: 1px solid @warning !important;
 }
 .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .btn-warning.focus, .btn-warning:active, .btn-warning:focus, .btn-warning:hover, .open > .dropdown-toggle.btn-warning {
-  background-color: darken($warning, 5%) !important;
-  border: 1px solid darken($warning, 5%) !important;
+  background-color: darken(@warning, 5%) !important;
+  border: 1px solid darken(@warning, 5%) !important;
 }
 
 .btn-danger {
-  background-color: $danger !important;
-  border: 1px solid $danger !important;
+  background-color: @danger !important;
+  border: 1px solid @danger !important;
 }
 .btn-danger:active, .btn-danger:focus, .btn-danger:hover, .btn-danger.active, .btn-danger.focus, .btn-danger:active, .btn-danger:focus, .btn-danger:hover, .open > .dropdown-toggle.btn-danger {
-  background-color: darken($danger, 5%) !important;
-  border: 1px solid darken($danger, 5%) !important;
+  background-color: darken(@danger, 5%) !important;
+  border: 1px solid darken(@danger, 5%) !important;
 }
 
 .btn-inverse {
-  background-color: $inverse !important;
-  border: 1px solid $inverse !important;
+  background-color: @inverse !important;
+  border: 1px solid @inverse !important;
 }
 .btn-inverse:hover, .btn-inverse:focus, .btn-inverse:active, .btn-inverse.active, .btn-inverse.focus, .btn-inverse:active, .btn-inverse:focus, .btn-inverse:hover, .open > .dropdown-toggle.btn-inverse {
-  background-color: darken($inverse, 5%) !important;
-  border: 1px solid darken($inverse, 5%) !important;
+  background-color: darken(@inverse, 5%) !important;
+  border: 1px solid darken(@inverse, 5%) !important;
 }
 
 .btn-purple {
-  background-color: $purple !important;
-  border: 1px solid $purple !important;
+  background-color: @purple !important;
+  border: 1px solid @purple !important;
 }
 .btn-purple:hover, .btn-purple:focus, .btn-purple:active {
-  background-color: darken($purple, 5%) !important;
-  border: 1px solid darken($purple, 5%) !important;
+  background-color: darken(@purple, 5%) !important;
+  border: 1px solid darken(@purple, 5%) !important;
 }
 
 .btn-pink {
-  background-color: $pink !important;
-  border: 1px solid $pink !important;
+  background-color: @pink !important;
+  border: 1px solid @pink !important;
 }
 .btn-pink:hover, .btn-pink:focus, .btn-pink:active {
-  background-color: darken($pink, 5%) !important;
-  border: 1px solid darken($pink, 5%) !important;
+  background-color: darken(@pink, 5%) !important;
+  border: 1px solid darken(@pink, 5%) !important;
 }
 
 
@@ -153,44 +153,44 @@ File: Components
 }
 
 .btn-bordred.btn-default {
-  background-color: $default;
-  border-bottom: 2px solid darken($default, 7%) !important;
+  background-color: @default;
+  border-bottom: 2px solid darken(@default, 7%) !important;
 }
 .btn-bordred.btn-custom {
-  background-color: $custom;
-  border-bottom: 2px solid darken($custom, 7%) !important;
+  background-color: @custom;
+  border-bottom: 2px solid darken(@custom, 7%) !important;
 }
 
 .btn-bordred.btn-primary {
-  border-bottom: 2px solid darken($primary, 7%) !important;
+  border-bottom: 2px solid darken(@primary, 7%) !important;
 }
 
 .btn-bordred.btn-success {
-  border-bottom: 2px solid darken($success, 7%) !important;
+  border-bottom: 2px solid darken(@success, 7%) !important;
 }
 
 .btn-bordred.btn-info {
-  border-bottom: 2px solid darken($info, 7%) !important;
+  border-bottom: 2px solid darken(@info, 7%) !important;
 }
 
 .btn-bordred.btn-warning {
-  border-bottom: 2px solid darken($warning, 10%) !important;
+  border-bottom: 2px solid darken(@warning, 10%) !important;
 }
 
 .btn-bordred.btn-danger {
-  border-bottom: 2px solid darken($danger, 10%) !important;
+  border-bottom: 2px solid darken(@danger, 10%) !important;
 }
 
 .btn-bordred.btn-inverse {
-  border-bottom: 2px solid darken($inverse, 20%) !important;
+  border-bottom: 2px solid darken(@inverse, 20%) !important;
 }
 
 .btn-bordred.btn-purple {
-  border-bottom: 2px solid darken($purple, 7%) !important;
+  border-bottom: 2px solid darken(@purple, 7%) !important;
 }
 
 .btn-bordred.btn-pink {
-  border-bottom: 2px solid darken($pink, 7%) !important;
+  border-bottom: 2px solid darken(@pink, 7%) !important;
 }
 
 .btn-rounded {
@@ -199,63 +199,63 @@ File: Components
 }
 
 .btn-trans.btn-default {
-  border: 1px solid fade($default, 10%) !important;
-  background-color: fade($default, 30%) !important;
-  color: $dark !important;
+  border: 1px solid fade(@default, 10%) !important;
+  background-color: fade(@default, 30%) !important;
+  color: @dark !important;
 }
 
 .btn-trans.btn-custom {
-  border: 1px solid fade($custom, 10%) !important;
-  background-color: fade($custom, 15%) !important;
-  color: $custom !important;
+  border: 1px solid fade(@custom, 10%) !important;
+  background-color: fade(@custom, 15%) !important;
+  color: @custom !important;
 }
 
 .btn-trans.btn-primary {
-  border: 1px solid fade($primary, 10%) !important;
-  background-color: fade($primary, 15%) !important;
-  color: $primary !important;
+  border: 1px solid fade(@primary, 10%) !important;
+  background-color: fade(@primary, 15%) !important;
+  color: @primary !important;
 }
 
 .btn-trans.btn-success {
-  border: 1px solid fade($success, 10%) !important;
-  background-color: fade($success, 15%) !important;
-  color: $success !important;
+  border: 1px solid fade(@success, 10%) !important;
+  background-color: fade(@success, 15%) !important;
+  color: @success !important;
 }
 
 .btn-trans.btn-info {
-  border: 1px solid fade($info, 10%) !important;
-  background-color: fade($info, 15%) !important;
-  color: $info !important;
+  border: 1px solid fade(@info, 10%) !important;
+  background-color: fade(@info, 15%) !important;
+  color: @info !important;
 }
 
 .btn-trans.btn-warning {
-  border: 1px solid fade($warning, 10%) !important;
-  background-color: fade($warning, 15%) !important;
-  color: $warning !important;
+  border: 1px solid fade(@warning, 10%) !important;
+  background-color: fade(@warning, 15%) !important;
+  color: @warning !important;
 }
 
 .btn-trans.btn-danger {
-  border: 1px solid fade($danger, 10%) !important;
-  background-color: fade($danger, 15%) !important;
-  color: $danger !important;
+  border: 1px solid fade(@danger, 10%) !important;
+  background-color: fade(@danger, 15%) !important;
+  color: @danger !important;
 }
 
 .btn-trans.btn-inverse {
-  border: 1px solid fade($inverse, 10%) !important;
-  background-color: fade($inverse, 15%) !important;
-  color: $inverse !important;
+  border: 1px solid fade(@inverse, 10%) !important;
+  background-color: fade(@inverse, 15%) !important;
+  color: @inverse !important;
 }
 
 .btn-trans.btn-purple {
-  border: 1px solid fade($purple, 10%) !important;
-  background-color: fade($purple, 15%) !important;
-  color: $purple !important;
+  border: 1px solid fade(@purple, 10%) !important;
+  background-color: fade(@purple, 15%) !important;
+  color: @purple !important;
 }
 
 .btn-trans.btn-pink {
-  border: 1px solid fade($pink, 10%) !important;
-  background-color: fade($pink, 15%) !important;
-  color: $pink !important;
+  border: 1px solid fade(@pink, 10%) !important;
+  background-color: fade(@pink, 15%) !important;
+  color: @pink !important;
 }
 
 /* File Upload */
@@ -289,9 +289,9 @@ File: Components
     &::before {
       -o-transition: 0.3s ease-in-out;
       -webkit-transition: 0.3s ease-in-out;
-      background-color: $white;
+      background-color: @white;
       border-radius: 2px;
-      border: 1px solid $lightdark-alt;
+      border: 1px solid @lightdark-alt;
       content: "";
       display: inline-block;
       height: 17px;
@@ -303,7 +303,7 @@ File: Components
       outline: none !important;
     }
     &::after {
-      color: $lightdark5;
+      color: @lightdark5;
       display: inline-block;
       font-size: 11px;
       height: 16px;
@@ -340,7 +340,7 @@ File: Components
   }
   input[type="checkbox"]:disabled + label {
     &::before {
-      background-color: $light;
+      background-color: @light;
       cursor: not-allowed;
     }
   }
@@ -367,11 +367,11 @@ File: Components
 .checkbox-custom {
   input[type="checkbox"]:checked + label {
     &::before {
-      background-color: $custom;
-      border-color: $custom;
+      background-color: @custom;
+      border-color: @custom;
     }
     &::after {
-      color: $white;
+      color: @white;
     }
   }
 }
@@ -379,11 +379,11 @@ File: Components
 .checkbox-primary {
   input[type="checkbox"]:checked + label {
     &::before {
-      background-color: $primary;
-      border-color: $primary;
+      background-color: @primary;
+      border-color: @primary;
     }
     &::after {
-      color: $white;
+      color: @white;
     }
   }
 }
@@ -391,11 +391,11 @@ File: Components
 .checkbox-danger {
   input[type="checkbox"]:checked + label {
     &::before {
-      background-color: $danger;
-      border-color: $danger;
+      background-color: @danger;
+      border-color: @danger;
     }
     &::after {
-      color: $white;
+      color: @white;
     }
   }
 }
@@ -403,11 +403,11 @@ File: Components
 .checkbox-info {
   input[type="checkbox"]:checked + label {
     &::before {
-      background-color: $info;
-      border-color: $info;
+      background-color: @info;
+      border-color: @info;
     }
     &::after {
-      color: $white;
+      color: @white;
     }
   }
 }
@@ -415,11 +415,11 @@ File: Components
 .checkbox-warning {
   input[type="checkbox"]:checked + label {
     &::before {
-      background-color: $warning;
-      border-color: $warning;
+      background-color: @warning;
+      border-color: @warning;
     }
     &::after {
-      color: $white;
+      color: @white;
     }
   }
 }
@@ -427,11 +427,11 @@ File: Components
 .checkbox-success {
   input[type="checkbox"]:checked + label {
     &::before {
-      background-color: $success;
-      border-color: $success;
+      background-color: @success;
+      border-color: @success;
     }
     &::after {
-      color: $white;
+      color: @white;
     }
   }
 }
@@ -439,11 +439,11 @@ File: Components
 .checkbox-purple {
   input[type="checkbox"]:checked + label {
     &::before {
-      background-color: $purple;
-      border-color: $purple;
+      background-color: @purple;
+      border-color: @purple;
     }
     &::after {
-      color: $white;
+      color: @white;
     }
   }
 }
@@ -451,11 +451,11 @@ File: Components
 .checkbox-pink {
   input[type="checkbox"]:checked + label {
     &::before {
-      background-color: $pink;
-      border-color: $pink;
+      background-color: @pink;
+      border-color: @pink;
     }
     &::after {
-      color: $white;
+      color: @white;
     }
   }
 }
@@ -463,11 +463,11 @@ File: Components
 .checkbox-inverse {
   input[type="checkbox"]:checked + label {
     &::before {
-      background-color: $inverse;
-      border-color: $inverse;
+      background-color: @inverse;
+      border-color: @inverse;
     }
     &::after {
-      color: $white;
+      color: @white;
     }
   }
 }
@@ -483,9 +483,9 @@ File: Components
     &::before {
       -o-transition: border 0.5s ease-in-out;
       -webkit-transition: border 0.5s ease-in-out;
-      background-color: $white;
+      background-color: @white;
       border-radius: 50%;
-      border: 1px solid $lightdark-alt;
+      border: 1px solid @lightdark-alt;
       content: "";
       display: inline-block;
       height: 17px;
@@ -503,7 +503,7 @@ File: Components
       -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
       -webkit-transform: scale(0, 0);
       -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
-      background-color: $lightdark5;
+      background-color: @lightdark5;
       border-radius: 50%;
       content: " ";
       display: inline-block;
@@ -560,15 +560,15 @@ File: Components
 .radio-custom {
   input[type="radio"] + label {
     &::after {
-      background-color: $custom;
+      background-color: @custom;
     }
   }
   input[type="radio"]:checked + label {
     &::before {
-      border-color: $custom;
+      border-color: @custom;
     }
     &::after {
-      background-color: $custom;
+      background-color: @custom;
     }
   }
 }
@@ -576,15 +576,15 @@ File: Components
 .radio-primary {
   input[type="radio"] + label {
     &::after {
-      background-color: $primary;
+      background-color: @primary;
     }
   }
   input[type="radio"]:checked + label {
     &::before {
-      border-color: $primary;
+      border-color: @primary;
     }
     &::after {
-      background-color: $primary;
+      background-color: @primary;
     }
   }
 }
@@ -592,15 +592,15 @@ File: Components
 .radio-danger {
   input[type="radio"] + label {
     &::after {
-      background-color: $danger;
+      background-color: @danger;
     }
   }
   input[type="radio"]:checked + label {
     &::before {
-      border-color: $danger;
+      border-color: @danger;
     }
     &::after {
-      background-color: $danger;
+      background-color: @danger;
     }
   }
 }
@@ -608,15 +608,15 @@ File: Components
 .radio-info {
   input[type="radio"] + label {
     &::after {
-      background-color: $info;
+      background-color: @info;
     }
   }
   input[type="radio"]:checked + label {
     &::before {
-      border-color: $info;
+      border-color: @info;
     }
     &::after {
-      background-color: $info;
+      background-color: @info;
     }
   }
 }
@@ -624,15 +624,15 @@ File: Components
 .radio-warning {
   input[type="radio"] + label {
     &::after {
-      background-color: $warning;
+      background-color: @warning;
     }
   }
   input[type="radio"]:checked + label {
     &::before {
-      border-color: $warning;
+      border-color: @warning;
     }
     &::after {
-      background-color: $warning;
+      background-color: @warning;
     }
   }
 }
@@ -640,15 +640,15 @@ File: Components
 .radio-success {
   input[type="radio"] + label {
     &::after {
-      background-color: $success;
+      background-color: @success;
     }
   }
   input[type="radio"]:checked + label {
     &::before {
-      border-color: $success;
+      border-color: @success;
     }
     &::after {
-      background-color: $success;
+      background-color: @success;
     }
   }
 }
@@ -656,15 +656,15 @@ File: Components
 .radio-purple {
   input[type="radio"] + label {
     &::after {
-      background-color: $purple;
+      background-color: @purple;
     }
   }
   input[type="radio"]:checked + label {
     &::before {
-      border-color: $purple;
+      border-color: @purple;
     }
     &::after {
-      background-color: $purple;
+      background-color: @purple;
     }
   }
 }
@@ -672,15 +672,15 @@ File: Components
 .radio-pink {
   input[type="radio"] + label {
     &::after {
-      background-color: $pink;
+      background-color: @pink;
     }
   }
   input[type="radio"]:checked + label {
     &::before {
-      border-color: $pink;
+      border-color: @pink;
     }
     &::after {
-      background-color: $pink;
+      background-color: @pink;
     }
   }
 }
@@ -725,56 +725,56 @@ File: Components
 }
 
 .panel-footer {
-  background: $lightdark;
+  background: @lightdark;
   border-top: 0px;
 }
 
 .panel-color {
   .panel-title {
-    color: $white;
+    color: @white;
   }
 }
 
 .panel-custom > .panel-heading {
-  background-color: $custom;
+  background-color: @custom;
 }
 
 .panel-primary > .panel-heading {
-  background-color: $primary;
+  background-color: @primary;
 }
 
 .panel-success > .panel-heading {
-  background-color: $success;
+  background-color: @success;
 }
 
 .panel-info > .panel-heading {
-  background-color: $info;
+  background-color: @info;
 }
 
 .panel-warning > .panel-heading {
-  background-color: $warning;
+  background-color: @warning;
 }
 
 .panel-danger > .panel-heading {
-  background-color: $danger;
+  background-color: @danger;
 }
 
 .panel-purple > .panel-heading {
-  background-color: $purple;
+  background-color: @purple;
 }
 
 .panel-pink > .panel-heading {
-  background-color: $pink;
+  background-color: @pink;
 }
 
 .panel-inverse > .panel-heading {
-  background-color: $inverse;
+  background-color: @inverse;
 }
 
 
 
 .panel-border .panel-heading {
-  background-color: $white;
+  background-color: @white;
   border-top: 3px solid #DADFE2 !important;
   padding: 10px 20px 0px;
 }
@@ -784,48 +784,48 @@ File: Components
 }
 
 .panel-border.panel-custom .panel-heading {
-  border-color: $custom !important;
-  color: $custom !important;
+  border-color: @custom !important;
+  color: @custom !important;
 }
 
 .panel-border.panel-primary .panel-heading {
-  border-color: $primary !important;
-  color: $primary !important;
+  border-color: @primary !important;
+  color: @primary !important;
 }
 
 .panel-border.panel-success .panel-heading {
-  border-color: $success !important;
-  color: $success !important;
+  border-color: @success !important;
+  color: @success !important;
 }
 
 .panel-border.panel-info .panel-heading {
-  border-color: $info !important;
-  color: $info !important;
+  border-color: @info !important;
+  color: @info !important;
 }
 
 .panel-border.panel-warning .panel-heading {
-  border-color: $warning !important;
-  color: $warning !important;
+  border-color: @warning !important;
+  color: @warning !important;
 }
 
 .panel-border.panel-danger .panel-heading {
-  border-color: $danger !important;
-  color: $danger !important;
+  border-color: @danger !important;
+  color: @danger !important;
 }
 
 .panel-border.panel-purple .panel-heading {
-  border-color: $purple !important;
-  color: $purple !important;
+  border-color: @purple !important;
+  color: @purple !important;
 }
 
 .panel-border.panel-pink .panel-heading {
-  border-color: $pink !important;
-  color: $pink !important;
+  border-color: @pink !important;
+  color: @pink !important;
 }
 
 .panel-border.panel-inverse .panel-heading {
-  border-color: $inverse !important;
-  color: $inverse !important;
+  border-color: @inverse !important;
+  color: @inverse !important;
 }
 
 
@@ -869,7 +869,7 @@ File: Components
     }
     .panel-heading + .panel-collapse {
       .panel-body {
-        border: 1px solid $lightdark;
+        border: 1px solid @lightdark;
         border-top: none;
       }
     }
@@ -881,7 +881,7 @@ File: Components
 
 .panel-group.panel-group-joined {
   .panel + .panel {
-    border-top: 1px solid $light;
+    border-top: 1px solid @light;
     margin-top: 0;
   }
 }
@@ -889,7 +889,7 @@ File: Components
 .panel-group-joined {
   .panel-group {
     .panel + .panel {
-      border-top: 1px solid $light;
+      border-top: 1px solid @light;
       margin-top: 0;
     }
   }
@@ -905,13 +905,13 @@ File: Components
         font-weight: 500;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
-        color: $white !important;
+        color: @white !important;
       }
     }
     li.active {
       a {
-        background-color: $white !important;
-        color: $dark !important;
+        background-color: @white !important;
+        color: @dark !important;
       }
     }
   }
@@ -930,13 +930,13 @@ File: Components
         font-size: 13px;
         background-color: transparent !important;
         font-weight: 500;
-        color: $dark !important;
+        color: @dark !important;
       }
     }
     li.active {
       a {
-        background-color: $custom !important;
-        color: $white !important;
+        background-color: @custom !important;
+        color: @white !important;
       }
     }
   }
@@ -951,9 +951,9 @@ File: Components
 ============= */
 
 .portlet {
-  background: $white;
+  background: @white;
   box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);
-  @include border-radius(5px);
+  .border-radius(5px);
   -webkit-transition: 1s ease-in-out;
     -moz-transition: 1s ease-in-out;
     -o-transition: 1s ease-in-out;
@@ -961,12 +961,12 @@ File: Components
   margin-bottom: 20px;
 
   .portlet-heading {
-    @include border-radius(3px 3px 0px 0px);
-    color: $white;
+    .border-radius(3px 3px 0px 0px);
+    color: @white;
     padding: 12px 20px;
 
     .portlet-title {
-      color: $white;
+      color: @white;
       float: left;
       font-size: 16px;
       font-weight: 600;
@@ -1003,7 +1003,7 @@ File: Components
     -moz-border-radius-bottomright: 5px;
     -webkit-border-bottom-left-radius: 5px;
     -webkit-border-bottom-right-radius: 5px;
-    background: $white;
+    background: @white;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     padding: 15px;
@@ -1012,12 +1012,12 @@ File: Components
 
 .portlet-default {
   .portlet-title {
-    color: $lightdark7 !important;
+    color: @lightdark7 !important;
   }
 }
 
 .portlet .portlet-heading.bg-custom a, .portlet .portlet-heading.bg-purple a, .portlet .portlet-heading.bg-info a, .portlet .portlet-heading.bg-success a, .portlet .portlet-heading.bg-primary a, .portlet .portlet-heading.bg-danger a, .portlet .portlet-heading.bg-warning a, .portlet .portlet-heading.bg-inverse a, .portlet .portlet-heading.bg-pink a {
-  color: $white;
+  color: @white;
   padding: 0px 5px;
 }
 
@@ -1034,7 +1034,7 @@ File: Components
 .loader-1 {
   width: 30px;
   height: 30px;
-  background-color: $dark;
+  background-color: @dark;
   -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
   animation: sk-rotateplane 1.2s infinite ease-in-out;
   position: absolute;
@@ -1054,7 +1054,7 @@ File: Components
 
 .progress {
   -webkit-box-shadow: none !important;
-  background-color: $light5;
+  background-color: @light5;
   box-shadow: none !important;
   height: 10px;
   margin-bottom: 18px;
@@ -1093,67 +1093,67 @@ File: Components
 }
 
 .progress-bar-primary {
-  background-color: $primary;
+  background-color: @primary;
 }
 
 .progress-bar-success {
-  background-color: $success;
+  background-color: @success;
 }
 
 .progress-bar-info {
-  background-color: $info;
+  background-color: @info;
 }
 
 .progress-bar-warning {
-  background-color: $warning;
+  background-color: @warning;
 }
 
 .progress-bar-danger {
-  background-color: $danger;
+  background-color: @danger;
 }
 
 .progress-bar-inverse {
-  background-color: $inverse;
+  background-color: @inverse;
 }
 
 .progress-bar-purple {
-  background-color: $purple;
+  background-color: @purple;
 }
 
 .progress-bar-pink {
-  background-color: $pink;
+  background-color: @pink;
 }
 .progress-bar-custom {
-  background-color: $custom;
+  background-color: @custom;
 }
 
 /* Custom progressbars */
 .progress-bar-custom-alt {
-  background-color: fade($custom,20%);
+  background-color: fade(@custom,20%);
 }
 .progress-bar-primary-alt {
-  background-color: fade($primary,20%);
+  background-color: fade(@primary,20%);
 }
 .progress-bar-success-alt {
-  background-color: fade($success,20%);
+  background-color: fade(@success,20%);
 }
 .progress-bar-info-alt {
-  background-color: fade($info,20%);
+  background-color: fade(@info,20%);
 }
 .progress-bar-warning-alt {
-  background-color: fade($warning,20%);
+  background-color: fade(@warning,20%);
 }
 .progress-bar-danger-alt {
-  background-color: fade($danger,20%);
+  background-color: fade(@danger,20%);
 }
 .progress-bar-purple-alt {
-  background-color: fade($purple,20%);
+  background-color: fade(@purple,20%);
 }
 .progress-bar-inverse-alt {
-  background-color: fade($inverse,20%);
+  background-color: fade(@inverse,20%);
 }
 .progress-bar-pink-alt {
-  background-color: fade($pink,20%);
+  background-color: fade(@pink,20%);
 }
 
 .progress-animated {
@@ -1234,13 +1234,13 @@ File: Components
 .table > thead > tr > th.active, .table > tbody > tr > th.active, .table > tfoot > tr > th.active,
 .table > thead > tr.active > td, .table > tbody > tr.active > td, .table > tfoot > tr.active > td,
 .table > thead > tr.active > th, .table > tbody > tr.active > th, .table > tfoot > tr.active > th {
-    background-color: $lightdark !important;
+    background-color: @lightdark !important;
 }
 
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th,
 .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td ,
 .table > thead > tr > th, .table-bordered{
-    border-top: 1px solid $light5;
+    border-top: 1px solid @light5;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > tbody > tr > th,
@@ -1248,15 +1248,15 @@ File: Components
 .table-bordered > thead > tr > td,
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid $light5;
+  border: 1px solid @light5;
 }
 .table > thead > tr > th {
     vertical-align: bottom;
-    border-bottom: 2px solid $light5;
+    border-bottom: 2px solid @light5;
 }
 
 tbody {
-  color: $lightdark7;
+  color: @lightdark7;
 }
 
 th {
@@ -1265,18 +1265,18 @@ th {
 }
 
 .table-bordered {
-    border: 1px solid $light5;
+    border: 1px solid @light5;
 }
 table.focus-on {
   tbody {
     tr.focused {
       th {
-        background-color: $custom;
-        color: $white;
+        background-color: @custom;
+        color: @white;
       }
       td {
-        background-color: $custom;
-        color: $white;
+        background-color: @custom;
+        color: @white;
       }
     }
   }
@@ -1302,9 +1302,9 @@ table.focus-on {
       &::before {
         -o-transition: 0.3s ease-in-out;
         -webkit-transition: 0.3s ease-in-out;
-        background-color: $white;
+        background-color: @white;
         border-radius: 3px;
-        border: 1px solid $lightdark-alt;
+        border: 1px solid @lightdark-alt;
         content: "";
         display: inline-block;
         height: 17px;
@@ -1316,7 +1316,7 @@ table.focus-on {
         outline: none !important;
       }
       &::after {
-        color: $lightdark5;
+        color: @lightdark5;
         display: inline-block;
         font-size: 11px;
         height: 16px;
@@ -1353,24 +1353,24 @@ table.focus-on {
     }
     input[type="checkbox"]:disabled + label {
       &::before {
-        background-color: $light;
+        background-color: @light;
         cursor: not-allowed;
       }
     }
     input[type="checkbox"]:checked + label {
       &::before {
-        background-color: $custom;
-        border-color: $custom;
+        background-color: @custom;
+        border-color: @custom;
       }
       &::after {
-        color: $white;
+        color: @white;
       }
     }
   }
 }
 
 .fixed-table-container tbody .selected td {
-    background-color: $lightdark;
+    background-color: @lightdark;
 }
 
 .modal-block {
@@ -1391,20 +1391,20 @@ table.focus-on {
     }
   }
   .form-control {
-    background-color: $white;
+    background-color: @white;
     width: 100%;
   }
   .fa-trash-o {
-    color: $danger;
+    color: @danger;
   }
   .fa-times {
-    color: $danger;
+    color: @danger;
   }
   .fa-pencil {
-    color: $success;
+    color: @success;
   }
   .fa-save {
-    color: $success;
+    color: @success;
   }
 }
 
@@ -1437,12 +1437,12 @@ div#datatable-buttons_info {
 /* Responsive data table */
 table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before,
 table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before{
-    box-shadow: 0 0 3px fade($dark,20%);
-    background-color: $primary;
+    box-shadow: 0 0 3px fade(@dark,20%);
+    background-color: @primary;
 }
 table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before,
 table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:before {
-  background-color: $danger;
+  background-color: @danger;
 }
 /* Fixed table */
 .fixedHeader-floating {
@@ -1451,7 +1451,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:before {
 
 /* Key Table */
 table.dataTable th.focus, table.dataTable td.focus {
-  outline: 3px solid $custom !important;
+  outline: 3px solid @custom !important;
   outline-offset: -1px
 }
 
@@ -1507,7 +1507,7 @@ table.dataTable th.focus, table.dataTable td.focus {
 
 .inbox-widget {
   .inbox-item {
-    border-bottom: 1px solid $light3;
+    border-bottom: 1px solid @light3;
     overflow: hidden;
     padding: 10px 0;
     position: relative;
@@ -1521,18 +1521,18 @@ table.dataTable th.focus, table.dataTable td.focus {
       width: 40px;
     }
     .inbox-item-author {
-      color: $lightdark3;
+      color: @lightdark3;
       display: block;
       margin: 0;
     }
     .inbox-item-text {
-      color: $muted;
+      color: @muted;
       display: block;
       font-size: 12px;
       margin: 0;
     }
     .inbox-item-date {
-      color: $muted;
+      color: @muted;
       font-size: 11px;
       position: absolute;
       right: 7px;
@@ -1540,3 +1540,7 @@ table.dataTable th.focus, table.dataTable td.focus {
     }
   }
 }
+
+
+
+

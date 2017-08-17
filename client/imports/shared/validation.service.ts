@@ -6,7 +6,7 @@ export class ValidationService {
 			'invalidEmailAddress':'Correo Electronico Invalido',
 			'invalidPassword':'Contraseña Invalida. La contraseña debe tener almenos 6 caracteres, y contener un numero.',
 			'minlength':`Tamaño minimo  ${validatorValue.requiredLength}`,
-			'matchError': 'Contraseñas no coinciden',
+			'MatchPassword': 'Contraseñas no coinciden',
 			'vonditionsError':'Debe aceptar los terminos y condiciones',
 			'invalidRFC':'RFC Invalido'
 		};

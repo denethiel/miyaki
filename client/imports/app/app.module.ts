@@ -6,11 +6,15 @@ import { RouterModule } from '@angular/router';
 
 import {AppRoutingModule} from './app.routing';
 
+
+
 import { AppComponent } from './app.component';
 import { LAYOUT_DECLARATIONS } from './../layouts';
 import { AUTH_DECLARATIONS } from './../auth';
 import {NAV_DROPDOWN_DIRECTIVES} from './../shared/nav-dropdown.directive';
 import {NAV_MENU_DIRECTIVES} from './../shared/nav-menu.directive';
+
+import {AuthGuard} from './../auth/auth-guard.service'
 
 
 @NgModule({
@@ -18,19 +22,21 @@ import {NAV_MENU_DIRECTIVES} from './../shared/nav-menu.directive';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   declarations: [
     AppComponent,
     NAV_DROPDOWN_DIRECTIVES,
     NAV_MENU_DIRECTIVES,
-    ...LAYOUT_DECLARATIONS,
-    ...AUTH_DECLARATIONS
+    LAYOUT_DECLARATIONS,
   ],
-  providers:[{
+  providers:[
+    AuthGuard,
+    {
     provide: LocationStrategy,
     useClass: HashLocationStrategy,
-  }],
+    }
+  ],
   bootstrap: [
     AppComponent
   ]

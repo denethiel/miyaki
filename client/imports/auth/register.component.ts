@@ -1,4 +1,4 @@
-import { Component, OnInit, NgZone } from '@angular/core';
+import { Component, OnInit, NgZone, Input } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, AbstractControl, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Accounts } from 'meteor/accounts-base';
@@ -7,17 +7,18 @@ import {ValidationService} from './../shared/validation.service';
 import template from './register.component.html';
 
 export class RegisterValidators{
-	static MatchPassword(AC: AbstractControl):any{
-		let password = AC.get('password').value;
-		let confirmPassword = AC.get('confirmPassword').value;
-		if(password != confirmPassword){
-			AC.get('confirmPassword').setErrors({MatchPassword: true})
-		}else{
-			return null;
-		}
-	}
+    static MatchPassword(AC: AbstractControl):any{
+        let password = AC.get('password').value;
+        let confirmPassword = AC.get('confirmPassword').value;
+        if(password != confirmPassword){
+            console.log('false');
+            AC.get('confirmPassword').setErrors({MatchPassword: true})
+        }else{
+            console.log('true');
+            return null;
+        }
+    }
 }
-
 @Component({
 	selector:'error-messages',
 	template: `
@@ -25,7 +26,7 @@ export class RegisterValidators{
 	`
 })
 export class ErrorMessages {
-	@Input control: FormControl;
+	@Input() control: FormControl;
 	constructor(){}
 
 	get errorMessage(){
@@ -41,7 +42,7 @@ export class ErrorMessages {
 @Component({
 	template
 })
-export class RegisterComponent{
+export class RegisterComponent implements OnInit{
 	registerForm: FormGroup;
 
 	email: AbstractControl;
@@ -50,19 +51,20 @@ export class RegisterComponent{
 	conditions: AbstractControl;
 
 	constructor(
+		private fb: FormBuilder,
 		private router:Router,
-		private zone: NgZone,
-		private fb: FormBuilder){}
+		private zone: NgZone
+		){}
 
 	createForm():void{
 		this.registerForm = this.fb.group({
 			'email':['', [Validators.required, ValidationService.emailValidator]],
 			'password':['',[Validators.required, ValidationService.passwordValidator]],
-			'confirmPassWord':['',[Validators.required, ValidationService.passwordValidator]],
+			'confirmPassword':['',[Validators.required, ValidationService.passwordValidator]],
 			'conditions':['',[Validators.required, ValidationService.acceptConditions]]
 		},{
-			validator: RegisterValidators.MatchPassword
-		});
+            validator: RegisterValidators.MatchPassword
+        });
 
 		this.email = this.registerForm.controls['email'];
 		this.password = this.registerForm.controls['password'];
@@ -71,6 +73,7 @@ export class RegisterComponent{
 	}
 
 	ngOnInit():void{
+		console.log("Register Component Iniciado");
 		this.createForm();
 	}
 

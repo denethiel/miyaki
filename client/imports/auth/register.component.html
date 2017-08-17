@@ -43,7 +43,7 @@
 							<div class="col-xs-12">
 								<div class="checkbox checkbox-custom">
 									<input id="checkbox-signup" type="checkbox" formControlName="conditions">
-									<label for="checkbox-signup">Acepto  los<a href="#">Terminos y Condiciones</a></label>
+									<label for="checkbox-signup">Acepto  los <div  (click)="staticModal.show()">Terminos y Condiciones</div></label>
 									<ul class="form-error-list">
 										<error-messages [control]="conditions"></error-messages>
 									</ul>
@@ -67,8 +67,134 @@
 
 			<div class="row">
 				<div class="col-sm-12 text-center">
-					<p class="text-muted">¿Posee una cuenta?<a class="text-primary m-l-5" [routerLink]="['/pages/login']"><b>Iniciar Sesion</b></a></p>
+					<p class="text-muted">¿Posee una cuenta?<a class="text-primary m-l-5" [routerLink]="['/login']"><b>Iniciar Sesion</b></a></p>
 				</div>
+			</div>
+
+			<div class="modal fade" bsModal #staticModal="bs-modal" [config]="{backdrop: 'static'}"
+				tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title pull-left">Terminos y Condiciones</h4>
+					<button type="button" class="close pull-right" aria-label="Close" (click)="staticModal.hide()">
+					<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					
+         CONTRATO DE PRESTACION DE SERVICIOS (el "Contrato") que celebran, por una parte dotNet Desarrollo de Sistemas S.A. de C.V. ("Facturadorelectrónico.com") a través de su representante legal, Marco Antonio Erosa Cárdenas y por otra parte EL CLIENTE, (Usuario, persona física o moral que registro sus datos en el portal www.facturadorelectronico.com), y conjuntamente, las "Partes" e indistintamente una "Parte", al tenor de las siguientes declaraciones y cláusulas:
+DECLARACIONES
+1. Declara Facturadorelectrónico.com  que:
+a)	Es una Sociedad debidamente constituida de conformidad con las leyes de la República Mexicana, contando su representante con las facultades suficientes para celebrar este Contrato.
+b)	Se encuentra inscrita en el Registro Federal de Contribuyentes bajo el número DND-070112-H92.
+c)	Que es Proveedor Autorizado de Certificación  para Emitir Comprobantes Fiscales Digitales de acuerdo a la autorización del SAT número 56179 publicado en su página el día  2011-06-22 14:00:00 (aaaa-mm-dd hh:mm:ss). 
+
+2. Declara el Cliente que:
+a)	Es una persona física o moral debidamente constituida de conformidad con las leyes de la República Mexicana, contando su representante con las facultades suficientes para celebrar este Contrato.
+b)	Se encuentra escrito en el Registro Federal de Contribuyentes bajo el número registrado en el portal www.facturadorelectronico.com con el campo RFC_CLIENTE y con domicilio fiscal en DOMICILIO_CLIENTE
+c)	Requiere que www.facturadorelectronico.com le preste los servicios como Proveedor Autorizado de Certificación (PAC). 
+En virtud de las declaraciones anteriores, las Partes convienen sujetarse a lo dispuesto en las siguientes cláusulas.
+CLAUSULAS
+1. Objeto
+El ingreso del nombre de usuario y contraseña en el Sitio Web implicará la aceptación por parte del Cliente a Facturadorelectrónico.com de este Contrato, e iniciará la prestación al Cliente a través del Sistema, de los servicios de generación y emisión electronica de CFDIs, recopilación, procesamiento, almacenamiento, manejo y envío de información relativa las transacciones de CFDIs realizadas por el cliente a través del Sitio Web, los cuales se describen a mayor detalle en el Anexo "A" del presente contrato ("de Servicios")
+2. Precios.
+a)	El Cliente pagará a Facturadorelectrónico.com, como contraprestación, las cantidades estipuladas en el referido Anexo "A" de este Contrato ("la Contraprestación"), más el Impuesto al Valor Agregado (I.V.A.) correspondiente.
+3. Forma de Pago.
+a)	La contraprestación por el Servicio será exigible y pagadera por el Cliente conforme a lo siguiente:
+
+I.- "El cliente" al momento de solicitar un determinado número  de folios para emitir CFDI deberá realizar el pago  en forma anticipada, respetando los costos señalados en el Anexo A de este Contrato. Posterior al pago realizado por "El Cliente" y a la entrega de todos los archivos y datos necesarios para poder emitir una factura electronica, "Facturadorelectrónico.com habilitará en un plazo no mayor a 48 horas, el sistema para la generación de CFDI y los folios correspondientes.
+b)	El pago del plan contratado en el Anexo A solicitados por el "El Cliente" podrá ser mediante Depósito bancario o transferencia bancaria a la o las cuentas bancarias de Facturadorelectronico.com
+
+c)	En caso de que el Cliente no realice el  pago convenido  de  la Contraprestación a favor de Facturadorelectrónico.com conforme a este Contrato, Facturadorelelctrónico.com  tendrá el derecho de suspender la prestación del Servicio sin previo aviso.
+
+4. Autorizaciones de Funcionarios para Realizar Diversas Solicitudes a Facturadorelectrónico.com.
+a)	El Cliente estará obligado a realizar designaciones específicas de aquellas personas o funcionarios que en su nombre utilicen el Sistema, incluyendo sin limitación los siguientes (en los sucesivo conjuntamente, los "Funcionarios Designados"):
+i.	Aquel funcionario, colaborador, o empleado facultado para realizar modificaciones, adiciones, eliminaciones o correcciones a la información del Cliente (el "Administrador del Sistema"), será designado conforme al formato agregado a este Contrato como Anexo "C".
+ii.	Aquellos funcionarios, colaboradores o empleados autorizados para que en su nombre realicen transacciones a través del Sistema, serán designados por el Administrador del Sistema.
+
+b) El Cliente está obligado a informar a Facturadorelectrónico.com cuando sea el caso que a alguno de los Funcionarios Designados, con permisos de" Administrador" le haya sido revocada su autorización conforme a esta cláusula. 
+
+5. Límites de Responsabilidad
+a)	"Facturadorelectronico.com  se compromete a cumplir las obligaciones fiscales como Proveedor Autorizado de Certificación (PAC)  que se establecen en la siguiente dirección:
+http://www.sat.gob.mx/sitio_internet/asistencia_contribuyente/principiantes/comprobantes_fiscales/66_19075.html 
+b)	"El Cliente" se obliga a cumplir con la obligaciones fiscales adquiridas por la contratación de un PAC las cuales son:
+a.	Autorizar la entrega al Servicio de Administración Tributaria (SAT), copia de los comprobantes fiscales que hayan realizado con Facturador Electronico.com, de acuerdo a lo establecido en la regla I.2.23.3.3, publicada el 14 de Septiembre del 2010 en la primera resolución de modificaciones a la resolución miscelánea fiscal. 
+b.	Conservar en medios electrónicos actualizados las Facturas Electrónicas y tenerlos a disposición de las autoridades fiscales.
+
+6. Uso del Sistema. 
+a)	El Cliente reconoce y acepta que los  servicios contenidos en el presente contrato  se prestan a través del Sistema, cuyo uso se pone a disposición del Cliente en el Sitio Web bajo el URL (el "Nombre de Dominio") www.facturadorelectronico.com el cual cumple con todos los requisitos señalados en las disposiciones fiscales para emitir comprobantes fiscales digitales.
+b)	Las Partes convienen en que para todo lo relacionado con la operación del Sistema, Facturadorelectrónico.com proporcionará al Cliente las reglas vigentes que estarán en el manual que para ese efecto mantenga publicado dentro del Sitio Web.
+c)	Facturadorelectrónico.com podrá modificar dichos términos y condiciones de uso del Sistema y el Sitio Web cuando Facturadorelectrónico.com lo crea conveniente, buscando no afectar al Cliente en sus procedimientos de trabajo, o bien cuando así lo marque la ley. Dichos cambios podrán realizarse por Facturadorelectrónico.com sin previo aviso al Cliente, cambios que incluyen en forma ejemplificativa mas no limitativa, cambios y mejoras al sistema, cambio de diseños y colores, organización de funciones, agregar nuevos servicios, cambios a los procedimientos de emisión y/o cancelación de CFDIs u otras operaciones.
+7. Conservación de Base de Datos ante Caso Fortuito o de Fuerza Mayor
+En caso de que Facturadorelectrónico.com no pueda prestar los servicios contenidos en el servicio por más de 15 (quince) días naturales consecutivos con motivo de casos fortuitos, fuerza mayor, o en general por causas no atribuibles a Facturadorelectrónico.com, Facturadorelectrónico.com tan pronto sea posible devolverá al Cliente su Base de Datos, salvo que el Cliente decida que Facturadorelectrónico.com continúe conservándola. El Cliente tendrá 30 (treinta) días naturales a partir del siguiente día al que se haya suspendido el servicio, para solicitar la devolución de su Base de Datos a Facturadorelectrónico.com. Transcurrido dicho plazo, se entenderá que el Cliente ha solicitado a Facturadorelectrónico.com que conserve dicha Base de Datos hasta nuevo aviso.
+
+
+8. Vigencia y Terminación
+a)	El presente Contrato se celebra por tiempo indefinido.
+b)	En caso de rescisión de este Contrato, el cliente deberá haber pagado a Facturadorelectrónico.com la Contraprestación generada hasta esa fecha y cumplido con las demás obligaciones a su cargo bajo este Contrato.
+c)	No obstante lo anterior, cualquiera de las partes (la "Parte Afectada") podrá rescindir de pleno derecho este Contrato, sin necesidad de declaración judicial, mediante simple aviso por escrito o vía correo electronico dirigido a la otra Parte, en caso de que la otra Parte incumpla (la "Parte Incumplida") con cualquiera de sus obligaciones establecidas en este Contrato o en los términos y condiciones de uso del Sitio Web. En este caso la Parte Incumplida tendrá un plazo de 15 (quince) días naturales siguientes al aviso de la Parte Afectada para subsanar su incumplimiento. Una vez transcurrido dicho plazo sin que la Parte Incumplida hubiere remediado su incumplimiento a satisfacción de Facturadorelectrónico.com, la rescisión de este contrato operará de forma automática.
+9. Avisos.
+a)	En caso de recisión del presente contrato por parte de "El cliente", no será reembolsable cantidad alguna pagada anticipadamente a "facturadorelectronico.com" por ningún concepto.
+b)	Cualquier aviso, requerimiento, notificación y demás comunicaciones relativas a este Contrato deberá ser por escrito ya sea personalmente o por medio de mensajería especializada con porte pagado o vía correo electronico. Dichas comunicaciones surtirán sus efectos en la fecha en que hayan sido entregadas en el domicilio de la otra Parte en caso de tratarse de comunicaciones por escrito, y en la fecha de recepción registrada por los servidores de correo electronico de Facturadorelectrónico.com y/o del Cliente en caso de tratarse de comunicaciones vía correo electronico. 
+
+Las comunicaciones por escrito deberán entregarse en los siguientes domicilios:
+
+Si es dirigida a dotNET Desarrollo de Sistemas S.A de C.V, a:
+
+
+Carretera Cancún - Aeropuerto km 7.5 Oficina 8
+Cancún, Benito Juárez
+Quintana Roo, México
+C.P. 77560
+
+Si es dirigida al Cliente, a:
+Se enviara a la dirección registrada en el portal www.facturadorelectronico.com	
+Las comunicaciones vía correo electronico deberán enviarse a las siguientes direcciones de correo electronico:
+
+Si es dirigida a Facturadorelectrónico.com, a:
+
+info@facturadorelectronico.com
+
+Si es dirigida al Cliente, a:
+
+Se enviara a la dirección registrada en el portal www.facturadorelectronico.com
+
+10. Acuerdo Único y Modificaciones.
+
+a)	Este Contrato y sus anexos contienen la totalidad del acuerdo entre las Partes formando en conjunto un solo instrumento, razón por la cual las Partes dejan sin efecto legal alguno cualquier otro acuerdo legal o escrito que hayan acordado o suscrito con fecha anterior a la fecha de celebración del mismo.
+b)	Este contrato sólo podrá ser modificado mediante convenio escrito firmado por las Partes.
+
+11. Ley Aplicable y Jurisdicción
+
+Facturadorelectrónico.com y el Cliente convienen en que para todo lo relacionado con este Contrato se sujetan expresamente a las leyes vigentes y tribunales competentes en Cancún, Quintana Roo, renunciando a cualquier otra jurisdicción que les pudiera corresponder ahora o en el futuro en razón de sus domicilios o por cualquier otra causa.
+
+
+
+ANEXO "A"
+Servicios
+Anexo "A" al contrato de prestación de servicios (el "Contrato") celebrado entre Dot Net Desarrollo de Sistemas S.A. de C.V. (Facturadorelectrónico.com) y  EL CLIENTE De conformidad con la cláusula 2 del Contrato, en contraprestación por el "Servicio" (emisión y envío de CFDIs, recopilación, procesamiento, almacenamiento, manejo y envío de de información relativa a las transacciones de facturacion del Cliente), el Cliente queda obligado a pagar a Facturadorelectrónico.com el monto por el número de folios contratado, los planes están publicados en www.facturadorelectronico.com 
+Medios de Pago 
+Anexo "B" 
+Al contrato de Prestación de Servicios (el "Contrato") celebrado entre dotNet Desarrollo de Sistemas S.A. de C.V. ("Facturadorelectrónico.com") y EL CLIENTE  Para efectos de este Contrato, el Cliente acepta en este acto las cuentas bancarias para ser utilizadas como medio de pago para las operaciones realizadas por medio de Facturadorelectrónico.com en los términos de la cláusula 3 del Contrato:
+Nombre: Dot Net Desarrollo de Sistemas S.A. De C.V
+Banco: SANTANDER
+Cuenta: 92001297656  (para deposito en sucursal)
+CLABE: 014691920012976568  (para transferencia Interbancaria)
+
+Referencia: su RFC   (como referencia coloque su RFC para poder Identificar su pago)
+
+Me comprometo a realizar los pagos por los conceptos que en este documento se detallan, con depósito a la cuenta bancaria identificada por la CLABE y número de cuenta en donde se efectuara la transacción indicado al rubro. Convengo en que el Banco Receptor quedará liberado de toda responsabilidad si el Emisor ejercitara acciones contra mí, derivados de la Ley o el Contrato que tengamos celebrado, y que el Banco emisor no estará obligado a efectuar ninguna reclamación al receptor; ni a interponer recursos de ninguna especie contra multas, sanciones o cobros indebidos, todo lo cual, en caso de ser necesario, será ejecutado por mí. El Banco Receptor tampoco será responsable si el Emisor no entregara oportunamente los comprobantes de servicios, o si los pagos se realizaran extemporáneamente por razones ajenas al Banco Receptor, el cual tendrá absoluta libertad de cancelarme este servicio si en mi cuenta no existieran fondos suficientes para cubrir uno o más de los pagos que le requiera el Emisor, o bien, ésta estuviera, bloqueada por algún motivo.
+
+
+ANEXO "C"
+Formato para Designar Funcionarios o Empleados Autorizados para Solicitar Modificaciones, Adiciones, Eliminaciones o Correcciones a la Información del Cliente
+Anexo "C" al Contrato de Prestación de Servicios (el "Contrato") celebrado entre dotNet Desarrollo de Sistemas S.A. de C.V. ("Facturadorelectrónico.com") y EL CLIENTE
+De acuerdo con la cláusula 5 de este Contrato, el Cliente en este acto designa a la persona que se indica a continuación como funcionario o empleado del Cliente autorizado para solicitar a dotNET Desarrollo de Sistemas S.A. de C.V. (Facturador electrronico.com) cualquier modificación, adición, eliminación o corrección de la Base de Datos ("Administrador del Sistema"), así como facultándolo para designar a aquellos funcionarios, colaboradores o empleados autorizados para que en su nombre realicen transacciones a través del Sistema mediante la creación de usuarios dentro del mismo Sistema con diferentes niveles de permisos que él mismo defina. Al presionar el botón de "Aceptar" al final de este Contrato, el funcionario o empleado así autorizado acepta tal designación.
+                                
+				</div>
+				</div>
+			</div>
 			</div>
 
         </div>

@@ -5,10 +5,12 @@ import {FullLayoutComponent} from './../layouts/full-layout.component';
 
 import {SimpleLayoutComponent} from './../layouts/simple-layout.component';
 
+import {AuthGuard} from './../auth/auth-guard.service'
+
 export const routes: Routes = [
 	{
 		path:'',
-		redirectTo:'pages/dasboard',
+		redirectTo:'pages/dashboard',
 		pathMatch:'full'
 	},
 	{
@@ -20,7 +22,8 @@ export const routes: Routes = [
 		children:[
 			{
 				path:'dashboard',
-				loadChildren:'./../dashboard/dashboard.module#DashboardModule'
+				loadChildren:() => require('./../dashboard/dashboard.module')['DashboardModule'],
+				canActivate:[AuthGuard]
 			}
 		]
 	},
@@ -33,7 +36,7 @@ export const routes: Routes = [
 		children:[
 			{
 				path:'',
-				loadChildren:'./../auth/auth.module#AuthModule'
+				loadChildren: () => require('./../auth/auth.module')['AuthModule']
 
 			}
 		]

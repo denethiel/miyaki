@@ -4,14 +4,14 @@
 @import url(https://fonts.googleapis.com/css?family=Rancho);
 
 
-@import "variables";
-@import "elements";
+@import "variables.less";
+@import "elements.less";
 
 
 /*
 Template Name: UBold Dashboard
 Author: CoderThemes
-Email: coderthemes$gmail.com
+Email: coderthemes@gmail.com
 File: Core
 */
 
@@ -33,8 +33,8 @@ File: Core
 ============= */
 
 body {
-  background: $light5;
-  font-family: $font-primary;
+  background: @light5;
+  font-family: @font-primary;
   margin: 0;
   padding-bottom: 60px;
   overflow-x: hidden;
@@ -43,11 +43,11 @@ body {
 html {
     position: relative;
     min-height: 100%;
-    background: $light5;
+    background: @light5;
 }
 h1, h2, h3, h4, h5, h6 {
   color: #505458;
-  font-family: $font-secondary;
+  font-family: @font-secondary;
   margin: 10px 0;
 }
 
@@ -62,21 +62,21 @@ h2 {
 h3 {
   line-height: 30px;
   small {
-    color: $lightdark4;
+    color: @lightdark4;
   }
 }
 
 h4 {
   line-height: 22px;
   small {
-    color: $lightdark4;
+    color: @lightdark4;
   }
 }
 
 h5 {
   font-size: 15px;
   small {
-    color: $lightdark4;
+    color: @lightdark4;
   }
 }
 
@@ -120,9 +120,9 @@ a {
 
 /* Footer */
 .footer {
-  border-top: 1px solid fade($muted,20%);
+  border-top: 1px solid fade(@muted,20%);
   bottom: 0px;
-  color: $muted;
+  color: @muted;
   text-align:left !important;
   padding: 19px 30px 20px;
   position: absolute;
@@ -131,9 +131,9 @@ a {
 }
 
 #wrapper {
-  height: $height;
+  height: @height;
   overflow: hidden;
-  width: $width;
+  width: @width;
 }
 
 .page {
@@ -372,12 +372,12 @@ a {
 .card-box{
   padding: 20px;
   box-shadow: 0 0px 8px 0 rgba(0,0,0,0.06),0 1px 0px 0 rgba(0,0,0,0.02);
-  @include border-radius(5px);
+  .border-radius(5px);
   margin-bottom: 20px;
-  background-color: $white;
+  background-color: @white;
 
   .card-drop {
-    color: $muted;
+    color: @muted;
     font-size: 20px;
     line-height: 1px;
     padding: 0px 5px;
@@ -388,7 +388,7 @@ a {
 /* Grid page */
 .grid-structure {
   .grid-container {
-    background-color: $lightdark;
+    background-color: @lightdark;
     margin-bottom: 10px;
     padding: 10px 20px;
   }
@@ -415,9 +415,9 @@ a {
     width: 40px;
   }
   .col-md-4 {
-    @include border-radius(3px);
+    .border-radius(3px);
     &:hover {
-      background-color: fade($custom,7%);
+      background-color: fade(@custom,7%);
     }
   }
 }
@@ -501,7 +501,7 @@ a {
   -o-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
   box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);
-  border: 1px solid fade($muted,15%);
+  border: 1px solid fade(@muted,15%);
   & > li {
     & > a {
       padding: 6px 20px;
@@ -509,118 +509,118 @@ a {
   }
 }
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
-  background-color: fade($default,30%) !important;
+  background-color: fade(@default,30%) !important;
 }
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
-  background-color: fade($muted,10%);
-  color: $dark;
+  background-color: fade(@muted,10%);
+  color: @dark;
 }
 
 
 /*Well */
 .well {
-    background-color: fade($muted,15%);
-    border: fade($muted,50%);
-    -webkit-box-shadow: inset 0 1px 1px fade($muted,25%);
-    box-shadow: inset 0 1px 1px fade($muted,25%);
+    background-color: fade(@muted,15%);
+    border: fade(@muted,50%);
+    -webkit-box-shadow: inset 0 1px 1px fade(@muted,25%);
+    box-shadow: inset 0 1px 1px fade(@muted,25%);
 }
 
 /* Background colors */
 .bg-custom {
-  background-color: $custom !important;
+  background-color: @custom !important;
 }
 
 .bg-primary {
-  background-color: $primary !important;
+  background-color: @primary !important;
 }
 
 .bg-success {
-  background-color: $success !important;
+  background-color: @success !important;
 }
 
 .bg-info {
-  background-color: $info !important;
+  background-color: @info !important;
 }
 
 .bg-warning {
-  background-color: $warning !important;
+  background-color: @warning !important;
 }
 
 .bg-danger {
-  background-color: $danger !important;
+  background-color: @danger !important;
 }
 
 .bg-muted {
-  background-color: $lightdark !important;
+  background-color: @lightdark !important;
 }
 
 .bg-inverse {
-  background-color: $inverse !important;
+  background-color: @inverse !important;
 }
 
 .bg-purple {
-  background-color: $purple !important;
+  background-color: @purple !important;
 }
 
 .bg-pink {
-  background-color: $pink !important;
+  background-color: @pink !important;
 }
 
 .bg-white {
-  background-color: $white !important;
+  background-color: @white !important;
 }
 
 .bg-lightdark {
-  background-color: $lightdark !important;
+  background-color: @lightdark !important;
 }
 
 /* Text colors */
 .text-custom {
-  color: $custom !important;
+  color: @custom !important;
 }
 
 .text-white {
-  color: $white !important;
+  color: @white !important;
 }
 
 .text-danger {
-  color: $danger !important;
+  color: @danger !important;
 }
 
 .text-muted {
-  color: $muted !important;
+  color: @muted !important;
 }
 
 .text-primary {
-  color: $primary !important;
+  color: @primary !important;
 }
 
 .text-warning {
-  color: $warning !important;
+  color: @warning !important;
 }
 
 .text-success {
-  color: $success !important;
+  color: @success !important;
 }
 
 .text-info {
-  color: $info !important;
+  color: @info !important;
 }
 
 .text-inverse {
-  color: $inverse !important;
+  color: @inverse !important;
 }
 
 .text-pink {
-  color: $pink !important;
+  color: @pink !important;
 }
 
 .text-purple {
-  color: $purple !important;
+  color: @purple !important;
 }
 
 .text-dark {
-  color: $lightdark7 !important;
+  color: @lightdark7 !important;
 }
 
 
@@ -699,39 +699,39 @@ textarea.form-control {
   padding: .3em .6em .3em;
 }
 .label-default {
-  background-color: $custom;
+  background-color: @custom;
 }
 
 .label-primary {
-  background-color: $primary;
+  background-color: @primary;
 }
 
 .label-success {
-  background-color: $success;
+  background-color: @success;
 }
 
 .label-info {
-  background-color: $info;
+  background-color: @info;
 }
 
 .label-warning {
-  background-color: $warning;
+  background-color: @warning;
 }
 
 .label-danger {
-  background-color: $danger;
+  background-color: @danger;
 }
 
 .label-purple {
-  background-color: $purple;
+  background-color: @purple;
 }
 
 .label-pink {
-  background-color: $pink;
+  background-color: @pink;
 }
 
 .label-inverse {
-  background-color: $inverse;
+  background-color: @inverse;
 }
 
 /* Badge */
@@ -741,7 +741,7 @@ textarea.form-control {
   padding: 3px 5px;
   font-size: 12px;
   margin-top: 1px;
-  background-color: $custom;
+  background-color: @custom;
 }
 
 .badge-xs {
@@ -757,35 +757,35 @@ textarea.form-control {
 
 
 .badge-primary {
-  background-color: $primary;
+  background-color: @primary;
 }
 
 .badge-success {
-  background-color: $success;
+  background-color: @success;
 }
 
 .badge-info {
-  background-color: $info;
+  background-color: @info;
 }
 
 .badge-warning {
-  background-color: $warning;
+  background-color: @warning;
 }
 
 .badge-danger {
-  background-color: $danger;
+  background-color: @danger;
 }
 
 .badge-purple {
-  background-color: $purple;
+  background-color: @purple;
 }
 
 .badge-pink {
-  background-color: $pink;
+  background-color: @pink;
 }
 
 .badge-inverse {
-  background-color: $inverse;
+  background-color: @inverse;
 }
 
 /* Pagination/ Pager */
@@ -836,8 +836,8 @@ textarea.form-control {
 .pagination > .active > span:hover,
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
-   background-color: $custom;
-   border-color: $custom;
+   background-color: @custom;
+   border-color: @custom;
 }
 
 .pager li > a, .pager li > span {
@@ -851,44 +851,44 @@ textarea.form-control {
 /* Tabs */
 .tab-content {
   padding: 20px;
-  border: 2px solid $light;
+  border: 2px solid @light;
   border-top: none;
 }
 .nav-tabs>.active>a, .nav-tabs>.active>a:focus, .nav-tabs>.active>a:hover {
-  border: 2px solid $light !important;
-  border-bottom-color: $white !important;
+  border: 2px solid @light !important;
+  border-bottom-color: @white !important;
 }
 .nav-tabs {
-  border-bottom: 2px solid $light;
+  border-bottom: 2px solid @light;
 }
 .nav-tabs>li {
   margin-bottom: -2px;
 }
 .nav-tabs {
   a {
-    color: $dark;
+    color: @dark;
     font-size: 15px;
     font-weight: 600;
-    font-family: $font-secondary;
+    font-family: @font-secondary;
   }
 }
 .nav>li>a:focus, .nav>li>a:hover {
     text-decoration: none;
-    background-color: $lightdark;
+    background-color: @lightdark;
 }
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
-  border-color: $light;
+  border-color: @light;
 }
 
 /* List group */
 
 .list-group-item {
-  border: 1px solid $light5;
+  border: 1px solid @light5;
   border-left: none;
   border-right: none;
 
   &:hover {
-    background-color: fade($muted, 10%);
+    background-color: fade(@muted, 10%);
   }
 
   &:first-child {
@@ -934,17 +934,17 @@ textarea.form-control {
 .alert-info {
     background-color: rgba(52, 211, 235, 0.2);
     border-color: rgba(52, 211, 235, 0.3);
-    color: $info;
+    color: @info;
 }
 .alert-warning {
     background-color: rgba(255, 189, 74, 0.2);
     border-color: rgba(255, 189, 74, 0.3);
-    color: $warning;
+    color: @warning;
 }
 .alert-danger {
     background-color: rgba(240, 80, 80, 0.2);
     border-color: rgba(240, 80, 80, 0.3);
-    color: $danger;
+    color: @danger;
 }
 
 /* Modals */
@@ -995,14 +995,14 @@ textarea.form-control {
 .modal-demo {
     background-color: #FFF;
     width: 600px;
-    @include border-radius(4px);
+    .border-radius(4px);
     display: none;
 
     .close {
       position: absolute;
       top: 15px;
       right: 25px;
-      color: $light;
+      color: @light;
     }
 }
 
@@ -1011,7 +1011,7 @@ textarea.form-control {
     line-height: 22px;
     font-size: 18px;
     background-color: #36404a;
-    color: $white;
+    color: @white;
     text-align: left;
     margin: 0px;
 }
@@ -1043,38 +1043,38 @@ textarea.form-control {
 
 
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
-    background-color: $custom;
-    border-color: $custom;
+    background-color: @custom;
+    border-color: @custom;
 }
 
 .nav-pills > .active > a > .badge {
-  color: $custom;
+  color: @custom;
 }
 
 .has-success {
   .form-control {
-    border-color: $success;
+    border-color: @success;
     box-shadow: none !important;
   }
 }
 
 .has-warning {
   .form-control {
-    border-color: $warning;
+    border-color: @warning;
     box-shadow: none !important;
   }
 }
 
 .has-error {
   .form-control {
-    border-color: $danger;
+    border-color: @danger;
     box-shadow: none !important;
   }
 }
 
 .input-group-addon {
   border-radius: 2px;
-  border: 1px solid $light;
+  border: 1px solid @light;
 }
 
 
@@ -1098,25 +1098,25 @@ textarea.form-control {
 .popover {
   font-family: inherit;
   border: none;
-  @include border-radius(3px);
+  .border-radius(3px);
 
   .popover-title {
     background-color: transparent;
-    color: $custom;
+    color: @custom;
     font-weight: 600;
   }
 }
 
 /* Code */
 code {
-    color: $primary;
-    background-color: $lightdark;
+    color: @primary;
+    background-color: @lightdark;
     border-radius: 4px;
 }
 
 /* Pre */
 pre{
-  background-color: $lightdark;
+  background-color: @lightdark;
   border: 1px solid #D4D8DA
 }
 
@@ -1161,7 +1161,7 @@ pre{
 
 
 /* Progressbar Animated */
-$-webkit-keyframes animationProgress {
+@-webkit-keyframes animationProgress {
   from {
     width:0;
   }
@@ -1173,7 +1173,7 @@ $-webkit-keyframes animationProgress {
 }
 
 /* Portlets loader */
-$-webkit-keyframes sk-rotateplane {
+@-webkit-keyframes sk-rotateplane {
   0% { -webkit-transform: perspective(120px) }
   50% { -webkit-transform: perspective(120px) rotateY(180deg) }
   100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
@@ -1286,52 +1286,52 @@ $-webkit-keyframes sk-rotateplane {
 
 .waves-effect.waves-light {
     .waves-ripple {
-        background-color: fade($white, 40%);
+        background-color: fade(@white, 40%);
     }
 }
 .waves-effect.waves-custom {
     .waves-ripple {
-        background-color: fade($custom, 40%);
+        background-color: fade(@custom, 40%);
     }
 }
 .waves-effect.waves-primary {
     .waves-ripple {
-        background-color: fade($primary, 40%);
+        background-color: fade(@primary, 40%);
     }
 }
 .waves-effect.waves-success {
     .waves-ripple {
-        background-color: fade($success, 40%);
+        background-color: fade(@success, 40%);
     }
 }
 .waves-effect.waves-info {
     .waves-ripple {
-        background-color: fade($info, 40%);
+        background-color: fade(@info, 40%);
     }
 }
 .waves-effect.waves-warning {
     .waves-ripple {
-        background-color: fade($warning, 40%);
+        background-color: fade(@warning, 40%);
     }
 }
 .waves-effect.waves-danger {
     .waves-ripple {
-        background-color: fade($danger, 40%);
+        background-color: fade(@danger, 40%);
     }
 }
 .waves-effect.waves-pink {
     .waves-ripple {
-        background-color: fade($pink, 40%);
+        background-color: fade(@pink, 40%);
     }
 }
 .waves-effect.purple {
     .waves-ripple {
-        background-color: fade($purple, 20%);
+        background-color: fade(@purple, 20%);
     }
 }
 .waves-effect.waves-inverse {
     .waves-ripple {
-        background-color: fade($inverse, 40%);
+        background-color: fade(@inverse, 40%);
     }
 }
 /* =============
@@ -1358,3 +1358,5 @@ $-webkit-keyframes sk-rotateplane {
   }
 
 }
+
+

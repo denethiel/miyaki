@@ -1,12 +1,12 @@
 
-@import "variables";
-@import "elements";
+@import "variables.less";
+@import "elements.less";
 
 
 /*
 Template Name: Adminto Dashboard
 Author: CoderThemes
-Email: coderthemes$gmail.com
+Email: coderthemes@gmail.com
 File: Menu
 */
 
@@ -19,8 +19,8 @@ File: Menu
   z-index: 999;
 
   .topbar-left {
-    background: $white;
-    border-top: 3px solid $custom;
+    background: @white;
+    border-top: 3px solid @custom;
     float: left;
     text-align: center;
     height: 73px;
@@ -35,10 +35,10 @@ File: Menu
 }
 
 .navbar-default {
-  background-color: $white;
+  background-color: @white;
   border-radius: 0px;
   border: none;
-  border-top: 3px solid $custom;
+  border-top: 3px solid @custom;
   margin-bottom: 0px;
   padding: 0px 20px;
   box-shadow: 0 0px 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);
@@ -62,7 +62,7 @@ File: Menu
 }
 
 .logo {
-  color: $primary !important;
+  color: @primary !important;
   font-size: 32px;
   font-family: 'Rancho', cursive;
 
@@ -72,7 +72,7 @@ File: Menu
 
   span {
     span {
-      color: $success;
+      color: @success;
     }
   }
 }
@@ -91,7 +91,7 @@ File: Menu
 
   h5{
     a{
-      color: $muted;
+      color: @muted;
     }
   }
 
@@ -108,32 +108,32 @@ File: Menu
   }
   .user-status.away {
     i {
-      color: $warning;
+      color: @warning;
     }
   }
   .user-status.offline {
     i {
-      color: $danger;
+      color: @danger;
     }
   }
   .user-status.online {
     i {
-      color: $success;
+      color: @success;
     }
   }
   .user-status.busy {
     i {
-      color: $muted;
+      color: @muted;
     }
   }
 
   ul {
     li {
       a{
-        color: $muted;
+        color: @muted;
 
         &:hover {
-          color: $custom;
+          color: @custom;
         }
       }
     }
@@ -147,7 +147,7 @@ File: Menu
     li {
       a {
         font-size: 26px;
-        color: $dark;
+        color: @dark;
         display: block;
         line-height: 70px;
       }
@@ -162,18 +162,18 @@ File: Menu
   .pulse {
     width: 2px;
     height: 2px;
-    border: 3px solid $danger;
+    border: 3px solid @danger;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
-    background-color: $danger;
+    background-color: @danger;
     z-index: 10;
     position: absolute;
     right: 3px;
   }
 
   .dot {
-    border: 4px solid $danger;
+    border: 4px solid @danger;
     background: transparent;
     -webkit-border-radius: 60px;
     -moz-border-radius: 60px;
@@ -193,7 +193,7 @@ File: Menu
     opacity: 0;
   }
 
-  $-moz-keyframes pulse {
+  @-moz-keyframes pulse {
     0% {
       -moz-transform: scale(0);
       opacity: 0.0;
@@ -216,7 +216,7 @@ File: Menu
     }
   }
 
-  $-webkit-keyframes pulse {
+  @-webkit-keyframes pulse {
     0% {
       -webkit-transform: scale(0);
       opacity: 0.0;
@@ -247,7 +247,7 @@ File: Menu
   z-index: 2;
   background: #2f353f;
   bottom: 50px;
-  height: $height;
+  height: @height;
   margin-bottom: -70px;
   margin-top: 0px;
   padding-bottom: 70px;
@@ -256,7 +256,7 @@ File: Menu
 
   .waves-effect {
     .waves-ripple {
-      background-color: fade($custom, 40%);
+      background-color: fade(@custom, 40%);
     }
   }
 }
@@ -274,17 +274,17 @@ File: Menu
 .button-menu-mobile {
   background: transparent;
   border: none;
-  color: $dark;
+  color: @dark;
   font-size: 21px;
   line-height: 68px;
 
   &:hover {
-    color: $custom;
+    color: @custom;
   }
 }
 
 .sidebar-inner {
-  height: $height;
+  height: @height;
 }
 
 #sidebar-menu, #sidebar-menu ul, #sidebar-menu li, #sidebar-menu a {
@@ -344,7 +344,7 @@ File: Menu
       }
       li.active {
         a {
-          color: $custom;
+          color: @custom;
         }
       }
       a {
@@ -358,7 +358,7 @@ File: Menu
         display: block;
         padding: 10px 20px 10px 65px;
         &:hover {
-          color: $white;
+          color: @white;
         }
         i {
           margin-right: 5px;
@@ -375,8 +375,8 @@ File: Menu
     margin-top: 2px;
   }
   .subdrop {
-    border-left: 3px solid $custom;
-    color: $custom !important;
+    border-left: 3px solid @custom;
+    color: @custom !important;
   }
 }
 
@@ -389,7 +389,7 @@ File: Menu
   border-left: 3px solid transparent;
 
   &:hover {
-    color: $custom;
+    color: @custom;
     text-decoration: none;
   }
 }
@@ -429,8 +429,8 @@ File: Menu
 
 
 #sidebar-menu > ul > li > a.active {
-  border-left: 3px solid $custom;
-  color: $custom !important;
+  border-left: 3px solid @custom;
+  color: @custom !important;
 }
 
 
@@ -465,7 +465,7 @@ File: Menu
         margin-top: -5px;
         padding-top: 5px;
         z-index: 9999;
-        background-color: $white;
+        background-color: @white;
       }
     }
   }
@@ -507,7 +507,7 @@ File: Menu
           position: relative;
           width: 260px;
           background: #272c35;
-          color: $custom;
+          color: @custom;
           border-color: transparent;
         }
         &:hover > ul {
@@ -524,7 +524,7 @@ File: Menu
             z-index: 6;
 
             &:hover {
-              color: $custom;
+              color: @custom;
             }
           }
         }
@@ -543,7 +543,7 @@ File: Menu
             position: absolute;
             width: 190px;
             a {
-              background: $white;
+              background: @white;
               box-shadow: none;
               padding-left: 15px;
               position: relative;
@@ -551,14 +551,14 @@ File: Menu
               z-index: 6;
 
               &:hover {
-                color: $custom;
+                color: @custom;
               }
             }
 
         }
       }
       a.subdrop {
-        color: $custom !important;
+        color: @custom !important;
       }
       ul > li > ul {
         display: none;
@@ -586,7 +586,7 @@ File: Menu
           }
           li.active {
             a{
-              color: $custom;
+              color: @custom;
             }
           }
         }
@@ -619,7 +619,7 @@ File: Menu
         i {
           display: block;
           line-height: 70px;
-          color: $dark !important;
+          color: @dark !important;
         }
       }
     }
@@ -659,21 +659,21 @@ File: Menu
 .side-bar {
   -moz-transition: all 200ms ease-out;
   -webkit-transition: all 200ms ease-out;
-  background-color: $white;
+  background-color: @white;
   box-shadow: 0 0px 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);
   display: block;
   float: left;
-  height: $height;
+  height: @height;
   position: fixed;
   transition: all 200ms ease-out;
   width: 240px;
 }
 
 .right-bar {
-  background: $white !important;
+  background: @white !important;
   z-index: 999 !important;
   h4 {
-    border-bottom: 1px solid fade($muted,50%);
+    border-bottom: 1px solid fade(@muted,50%);
     padding: 4px 10px 10px 18px;
     text-transform: uppercase;
     font-size: 14px;
@@ -694,11 +694,11 @@ File: Menu
   height: 100%;
 
   .list-group-item {
-    border-bottom: 1px solid fade($muted,20%) !important;
+    border-bottom: 1px solid fade(@muted,20%) !important;
     margin-bottom: 0px;
   }
   .list-group-item.active {
-    background-color: fade($muted,10%);
+    background-color: fade(@muted,10%);
   }
 }
 
@@ -713,7 +713,7 @@ File: Menu
 
       img {
         border-radius: 50%;
-        width: $width;
+        width: @width;
       }
     }
 
@@ -726,7 +726,7 @@ File: Menu
       text-align: center;
 
       i {
-        color: $white;
+        color: @white;
         line-height: 30px;
         font-size: 16px;
       }
@@ -736,7 +736,7 @@ File: Menu
       margin-left: 40px;
 
       span.name {
-        color: $dark;
+        color: @dark;
         text-overflow: ellipsis;
         white-space: nowrap;
         display: block;
@@ -746,7 +746,7 @@ File: Menu
 
 
       span.desc {
-        color: $muted;
+        color: @muted;
         text-overflow: ellipsis;
         white-space: nowrap;
         display: block;
@@ -756,7 +756,7 @@ File: Menu
       }
       span.time {
         font-size: 11px;
-        color: $custom;
+        color: @custom;
         font-style: italic;
       }
     }
@@ -771,25 +771,25 @@ File: Menu
     position: absolute;
     top: 7px;
     right: 20px;
-    color: fade($muted, 70%);
+    color: fade(@muted, 70%);
 
     &:hover {
-      color: $muted;
+      color: @muted;
     }
   }
 
   .form-control,
   .form-control:focus {
-    border: 1px solid fade($muted, 15%);
+    border: 1px solid fade(@muted, 15%);
     font-size: 13px;
     height: 34px;
-    color: $dark;
+    color: @dark;
     font-weight: 600;
     padding-left: 20px;
     padding-right: 40px;
     margin-top: 18px;
     margin-left: 20px;
-    background: fade($muted, 10%);
+    background: fade(@muted, 10%);
     box-shadow: none;
     border-radius: 30px;
     width: 190px;
@@ -798,16 +798,18 @@ File: Menu
 
 input.app-search-input {
   &::-webkit-input-placeholder {
-    color: fade($white, 70%);
+    color: fade(@white, 70%);
     font-weight: normal;
   }
   &:-moz-placeholder {
-    color: fade($white, 70%);
+    color: fade(@white, 70%);
   }
   &::-moz-placeholder {
-    color: fade($white, 70%);
+    color: fade(@white, 70%);
   }
   &:-ms-input-placeholder {
-    color: fade($white, 70%);
+    color: fade(@white, 70%);
   }
 }
+
+
